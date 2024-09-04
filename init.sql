@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS guest_service;
+
+USE guest_service;
+
+CREATE TABLE IF NOT EXISTS guests (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    email VARCHAR(100) UNIQUE,
+    phone VARCHAR(30) UNIQUE NOT NULL,
+    country VARCHAR(100) NOT NULL
+);
