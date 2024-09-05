@@ -103,7 +103,7 @@ CREATE TABLE guests (
 ## Запуск
 Для запуска микросервиса используйте Docker:
 ```bash
-docker-compose up –build
+docker-compose up --build
 ```
 ## Заголовки для отладки
 Все ответы сервера содержат два заголовка:
